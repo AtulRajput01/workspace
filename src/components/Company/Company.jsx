@@ -2,10 +2,8 @@ import React, { useState } from 'react';
 import './Company.scss';
 
 const Pagination = ({ currentPage, totalPages, onPageChange }) => {
-  const handlePageClick = (page)
- => {
-    onPageChange(page)
-;
+  const handlePageClick = (page) => {
+    onPageChange(page);
   };
 
   return (
@@ -59,11 +57,9 @@ const Company = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const totalPages = 5; // Example total pages for pagination
 
-  const handlePageChange = (page)
- => {
+  const handlePageChange = (page) => {
     if (page > 0 && page <= totalPages) {
-      setCurrentPage(page)
-;
+      setCurrentPage(page);
     }
   };
 
